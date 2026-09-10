@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import useDebounce from "../../customHook.jsx";
 
 const Loader = () => <p className="search-loader">Chargement en cours...</p>;
+const API_URL = import.meta.env.VITE_API_URL;
 
 export default function Search() {
   const [results, setResults] = useState([]);
@@ -19,8 +20,8 @@ export default function Search() {
     async function fetchMovies() {
       const title = debouncedQuery.trim();
       const url = title
-        ? `http://localhost:3000/api/movies?title=${encodeURIComponent(title)}`
-        : "http://localhost:3000/api/movies";
+        ? `${API_URL}/api/movies?title=${encodeURIComponent(title)}`
+        : `${API_URL}/api/movies`;
 
       setLoading(true);
       setError("");
