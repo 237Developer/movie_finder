@@ -25,6 +25,12 @@
   align-items: flex-start;
 }
 
+@media (max-width: 768px) {
+  .movie-content {
+    flex-direction: column;
+  }
+}
+
 .movie-content > img {
   flex: 0 0 320px;
   width: 320px;
