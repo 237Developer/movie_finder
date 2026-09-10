@@ -1,0 +1,13 @@
+.main-btn {
+  width: 9rem;
+  height: 2.5rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 25px;
+}

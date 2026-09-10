@@ -1,0 +1,28 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.error-page > div {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-page h2 {
+  font-size: 60px;
+}
+
+.error-page p {
+  font-size: 30px;
+}
+
+.error-page button {
+  width: 120px;
+  height: 35px;
+}

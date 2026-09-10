@@ -1,0 +1,6 @@
+.button {
+  background-color: var(--call-to-action);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+}
